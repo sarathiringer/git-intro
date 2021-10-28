@@ -6,3 +6,8 @@ library(ggplot2)
 data("penguins")
 
 head(penguins)
+
+ggplot(penguins, aes(x = bill_length_mm, bill_depth_mm, col = island)) +
+  geom_point() +
+  geom_smooth()
+
